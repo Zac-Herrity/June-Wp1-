@@ -13,9 +13,10 @@ export class ExamApi {
   countries = signal<Countries[]>([]);
 
   getCountries(){
-    this._http.get<any[]>(this.apiUrl).subscribe((data) =>{
+    this._http.get<Countries[]>(this.apiUrl).subscribe((data) =>{
       this.countries.set(data);
-      console.log(this.countries);
-    });
+    })
+    };
   }
-}
+  //Getting HTTPErrorResponse & Routes not working :D
+
