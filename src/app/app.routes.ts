@@ -3,6 +3,6 @@ import { About } from './components/about/about';
 import { Countries } from './components/countries/countries';
 
 export const routes: Routes = [
-    {path: '', component: Countries},
-    {path: 'About', component: About}
+    {path: '/', component: Countries},
+    {path: '/about', component: About}
 ];
